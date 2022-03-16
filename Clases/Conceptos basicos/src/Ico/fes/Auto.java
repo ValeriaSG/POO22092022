@@ -31,6 +31,7 @@ public class Auto {
         this.color = color;
     }
 
+   
     public Color getColor() {
         return color;
     }
