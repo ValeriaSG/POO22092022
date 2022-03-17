@@ -20,6 +20,12 @@ public class Monitor {
         this.pulgadas = pulgadas;
     }
 
+    public Monitor(String foshiba_143f) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+   
+
     public float getPulgadas() {
         return pulgadas;
     }
