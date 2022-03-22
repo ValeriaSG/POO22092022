@@ -10,6 +10,9 @@ import ico.fes.componentes.Mouse;
 import ico.fes.componentes.Procesador;
 import ico.fes.componentes.Teclado;
 import ico.fes.herencia.Alumno;
+import ico.fes.herencia.Servidor;
+import ico.fes.herencia.poliforismo.Animal;
+import ico.fes.herencia.poliforismo.Perro;
 import javax.swing.JFrame;
 
 /**
@@ -76,7 +79,36 @@ public class ReutilizandoCodigo2209 {
         //constructor sobrecargado
         Alumno alu2 = new Alumno("319299", "ICO", "José Perez", 18);
         System.out.println(alu2);
+        
+        alu1.setNumeroCuenta("32031");
+        alu1.setEdad(19);
+        System.out.println(alu1);
+        
+        
+        
+        
+        
+        
+        System.out.println("----------- Compisicion y Herencia en la misma Clase ----------");
+        Servidor server=new Servidor();
+        server.setMarca("HP");
+        server.setNumeroTarjetaRed(2);
+        
+        //RATON
+        server.setRaton(new Mouse("LG", "Optico"));
+        System.out.println(server);
 
+        server.getRaton().setMarca("Logitech");
+        System.out.println(server);
+
+        
+        System.out.println("----- Ejemplo Poliformismo-----");
+        Perro dog=new Perro ("Bull dog","5 estrellas",4);
+        Animal animal1=new Animal(4);
+        dog.emitirSonido();
+        animal1.emitirSonido();
+        
+        
     }
 
 }
