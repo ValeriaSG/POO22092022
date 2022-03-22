@@ -8,18 +8,20 @@ package ico.fes.herencia;
  *
  * @author Valeria
  */
+//hereda la clase
 public class Alumno extends Persona{
     private String numeroCuenta;
     private String carrera;
 
     public Alumno() {
     }
-    //
+    //metodo sobrecargado 
     public Alumno(String numeroCuenta, String carrera) {
         this.numeroCuenta = numeroCuenta;
         this.carrera = carrera;
     }
     //Super clase
+    
     public Alumno(String numeroCuenta, String carrera, String nombre, int edad) {
         super(nombre, edad);
         this.numeroCuenta = numeroCuenta;
@@ -44,6 +46,7 @@ public class Alumno extends Persona{
 
     @Override
     public String toString() {
+        //hereda 
         return super.toString() +"Alumno{" + "numeroCuenta=" + numeroCuenta + ", carrera=" + carrera + '}';
     }
 

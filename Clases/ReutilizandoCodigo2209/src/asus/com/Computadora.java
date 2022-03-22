@@ -16,14 +16,16 @@ import ico.fes.componentes.Teclado;
 public class Computadora {
     private String marca;
     private String modelo;
+    
     private Monitor pantalla;
     private Mouse raton;
     private Teclado teclado;
     private Procesador cpu;
     
-    //se manda a llamar el contenido
+    
 
     public Computadora() {
+        //se manda a llamar el contenido  ya que se quiere en  el toStrimg para impimir datos
         pantalla = new Monitor();
         raton= new Mouse();
         teclado=new Teclado();
@@ -89,6 +91,7 @@ public class Computadora {
 
     @Override
     public String toString() {
+      
         /*String estado="Marca: " +  this.marca + "\n";
         estado = estado + "Modelo:" + this.modelo + "\n";
         estado = estado +"Mouse: Marca "+ this.raton.getMarca()+", Tipo: " + this.getRaton().getTipo()+ "\n";

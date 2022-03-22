@@ -40,16 +40,23 @@ public class ReutilizandoCodigo2209 {
         miCompu.setCpu(new Procesador("Intel", 2.6f));
         System.out.println(miCompu);
 
+        
+        
+        
+        
         miCompu.getCpu().setMarca("AMD");
         System.out.println(miCompu);
 
         //establecer un mouse: logitech, tipo optico
         miCompu.setRaton(new Mouse("Logitech", "Optico "));
         System.out.println(miCompu);
-
+        
+        //Constructor Sobrecargado
+        //Composicion
         Computadora compu2 = new Computadora("Apple", "MackBook Pro", new Monitor("foshiba", 143f), new Mouse("Actekc", "Optico"), new Teclado("Apple", 101), new Procesador("M1", 3.4f));
         System.out.println(compu2);
-
+        
+        //ejemplos de composicion
         //Una forma para poner mouse, marca y el tipo
         compu2.getRaton().setMarca("Apple");
         compu2.getRaton().setTipo("Touch");
@@ -59,12 +66,15 @@ public class ReutilizandoCodigo2209 {
         /* compu2.setRaton(new Mouse("Apple", "Touch"));
             System.out.println(compu2);
          */
+        
+        //ejemplo de herencia
         System.out.println("---------------");
         Alumno alu1 = new Alumno();
         alu1.setNombre("José");
         System.out.println(alu1);
-
-        Alumno alu2 = new Alumno("319299", "ICO", "José", 18);
+        
+        //constructor sobrecargado
+        Alumno alu2 = new Alumno("319299", "ICO", "José Perez", 18);
         System.out.println(alu2);
 
     }
