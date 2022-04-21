@@ -1,0 +1,5 @@
+public class HolaMundoProfe{
+	public static void main (String [] args ){
+		System.out.println("Hola mundo desde ICO Fes Aragón ");
+	}
+}
