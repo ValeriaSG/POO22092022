@@ -141,24 +141,27 @@ public class JavaBasico2209 {
             
             //For Each es un FOR especial, introduciendo en la version 2 de java
             System.out.println("Con FOR EACH");
-            for(Alumno alumno : lista){
+            //for (Alumno alumno : lista) {
                 System.out.println(alumno.evaluarDesempenio());
-            }
                 
-            }
-            
-        }
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+            //}
+           
+         }
+                
     }
+            
+ }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
-}
+    
+
