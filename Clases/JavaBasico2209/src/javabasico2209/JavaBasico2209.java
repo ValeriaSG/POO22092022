@@ -4,6 +4,7 @@
  */
 package javabasico2209;
 
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 /**
@@ -123,6 +124,12 @@ public class JavaBasico2209 {
             System.out.println(pesos[i]);
         }
         
+        System.out.println("Orden Inverso");
+        for (int i = 0; i > pesos.length; i++) {
+            int peso = pesos[i];
+            
+        }
+                
         
         
         
@@ -141,11 +148,58 @@ public class JavaBasico2209 {
             
             //For Each es un FOR especial, introduciendo en la version 2 de java
             System.out.println("Con FOR EACH");
-            //for (Alumno alumno : lista) {
-                System.out.println(alumno.evaluarDesempenio());
-                
-            //}
+            for (Alumno alumno1 : lista) {
+                System.out.println(alumno1.evaluarDesempenio());
+            }
            
+            ArrayList<Alumno>grupo2209= new ArrayList<Alumno>();
+            grupo2209.add(new Alumno("5555555",2, 9.0f));
+            grupo2209.add(new Alumno("6666666",2, 8.0f));
+            grupo2209.add(new Alumno("7777777",2, 6.0f));
+            grupo2209.add(new Alumno("8888888",2, 10.0f));
+            grupo2209.add(new Alumno("9999999",2, 8.0f));
+            
+            for (Alumno alumno1 : grupo2209) {
+                System.out.println(alumno1);
+                
+            }
+                    System.out.println("Add con indice");
+            grupo2209.add(2,new Alumno("8111111",3,9.9f));
+            for (Alumno alumno1 : grupo2209) {
+
+                System.out.println(alumno1);                
+            }
+            
+            Alumno tmp= grupo2209.get(2);
+            System.out.println("Alumno de index = 1 :"+tmp);
+            
+            System.out.println("Eliminar el index 3");
+            Alumno tmp2=grupo2209.remove(3);
+            System.out.println("Elementos sacado=" + tmp2);
+            
+            for (Alumno alumno1 : grupo2209){
+                System.out.println(alumno1);
+                
+            }
+            
+            System.out.println("Remplazar elemento");
+            Alumno tmp3=grupo2209.set(0, new Alumno ("444444", 4, 4.4f));
+            System.out.println("El sacado es= "+tmp3);
+            
+            for (Alumno alumno1 : grupo2209) {
+                System.out.println(alumno1);
+                
+            }
+            
+            
+            
+            try {
+                System.out.println("Excepciones");
+                System.out.println(grupo2209.get(2));
+            } catch (Exception e) {
+                System.out.println("Error... revisar los indices");
+            }
+            System.out.println("Fin del programa");
          }
                 
     }

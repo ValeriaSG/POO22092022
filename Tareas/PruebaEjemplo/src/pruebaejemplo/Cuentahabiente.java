@@ -56,7 +56,7 @@ public class Cuentahabiente {
     }
     
     public String evaluarNivelCliente(){
-        return this.balance <= 50000.00f? " Es Cliente Regular" : "Es Cliente Premium";
+        return this.balance <= 50000.00f? " Es Cliente Regular " : "Es Cliente Premium";
     }
     
     
