@@ -11,8 +11,9 @@ package ico.fes.awt;
 public class JavaGraficoMain {
     public static void main(String[] args) {
         
-        Ventana ventana=new Ventana("Hola AWT  ICO FES ARAGON");
+        //Ventana ventana=new Ventana("Hola AWT  ICO FES ARAGON");
         
+        VentanaVersion2 ventana = new VentanaVersion2();
         
     }
 }
