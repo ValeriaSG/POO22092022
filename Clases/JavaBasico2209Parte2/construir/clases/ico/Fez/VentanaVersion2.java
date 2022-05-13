@@ -18,10 +18,7 @@ import java.awt.event.MouseListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-/**
- *
- * @author felipezarate
- */
+ 
 public class VentanaVersion2 extends Frame{
     
     private TextField cuadroTexto;
