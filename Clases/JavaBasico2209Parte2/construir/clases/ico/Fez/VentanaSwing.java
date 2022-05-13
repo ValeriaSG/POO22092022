@@ -33,7 +33,7 @@ public class VentanaSwing extends JFrame {
         setLayout(new FlowLayout(FlowLayout.CENTER));
 
         cuadro = new JTextField(5);
-        
+         
         ImageIcon icono = new ImageIcon(System.getProperty("user.dir")+"/src/ico/fes/swing/auto.png");
         
        
