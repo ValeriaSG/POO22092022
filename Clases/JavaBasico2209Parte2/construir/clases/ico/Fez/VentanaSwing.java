@@ -18,10 +18,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-/**
- *
- * @author felipezarate
- */
+
 public class VentanaSwing extends JFrame {
     
     private JTextField cuadro;
