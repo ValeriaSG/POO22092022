@@ -43,7 +43,7 @@ public class InterfazCifradoCesar extends JFrame implements ActionListener{
         etiquetaDespla.setBounds(25, 20, 400, 50);
         cuadroDesplazo = new JTextField();
         cuadroDesplazo.setBounds(25, 55, 35, 25);
-        cuadroDesplazo.setToolTipText("Por favor de introducir un número de desplazamiento que se deseado");  
+        cuadroDesplazo.setToolTipText("Por favor de introducir un número de desplazamiento que se desea");  
         
             etiquetaIngresar = new JLabel("Ingresa un mensaje normal: ");
             etiquetaIngresar.setBounds(25, 77, 400, 50);
